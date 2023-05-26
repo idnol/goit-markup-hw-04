@@ -184,6 +184,16 @@ img {
 .benefits-list-item-title {
     margin-bottom: 8px;
 }
+.benefits-item-image {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-white);
+    margin-bottom: 8px;
+}
+
 .list-title {
     font-weight: 500;
     font-size: 20px;
