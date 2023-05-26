@@ -4,6 +4,8 @@
     --text-color-grey: #434455;
     --color-white: #F4F4FD;
     --color-light-blue: #e7e9fc;
+    --color-grey: #8e8f99;
+    --color-dark-blue: #404bbf;
 }
 
 body {
@@ -97,7 +99,7 @@ img {
 .header-menu__link:hover,
 .header-menu__link:focus
 {
-    color: #404bbf;
+    color: var(--color-dark-blue);
 }
 .header-address {
     font-style: normal;
@@ -116,7 +118,7 @@ img {
 .header-contact__link:hover,
 .header-contact__link:focus
 {
-    color: #404bbf;
+    color: var(--color-dark-blue);
 }
 .header .nav {
     display: flex;
@@ -131,7 +133,10 @@ img {
 }
 .footer-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+.footer-info {
+    margin-right: 120px;
 }
 .footer-logo {
     display: inline-block;
@@ -139,8 +144,9 @@ img {
 }
 .footer-info__text {
     max-width: 264px;
-    color: var(--color-white);
+    color: #FFFFFF;
     letter-spacing: 0.02em;
+    line-height: 1.5
 }
 .footer-social_title {
     font-weight: 500;
@@ -183,7 +189,7 @@ img {
 .hero-button:hover,
 .hero-button:focus
 {
-    background-color: #404BBF;
+    background-color: var(--color-dark-blue);
 }
 .benefits {
     padding: 120px 0;
@@ -288,7 +294,7 @@ img {
 }
 .team-list__icon-wrapper:hover,
 .team-list__icon-wrapper:focus {
-    background-color: #404bbf;
+    background-color: var(--color-dark-blue);
 }
 .team-list__icon {
     fill: var(--color-white);
@@ -318,7 +324,7 @@ img {
 .portfolio-nav__button:focus
 {
     color: #ffffff;
-    background-color: #404BBF;
+    background-color: var(--color-dark-blue);
     border: 1px solid transparent;
     box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -332,12 +338,17 @@ img {
 .portfolio-list__item-wrapper {
     width: calc((100% - 48px) / 3);
 }
+.portfolio-list__item {
+    display: block;
+}
 .portfolio-list__item-inner {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-.portfolio-list__item:hover {
+.portfolio-list__item:hover,
+.portfolio-list__item:focus
+{
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-list__title {
@@ -361,13 +372,24 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #8E8F99;
+    border: 1px solid var(--color-grey);
     border-radius: 4px;
     height: 88px;
+    color: var(--color-grey);
+}
+.customers-list__item:hover,
+.customers-list__item:focus {
+    border-color: var(--color-dark-blue);
+    color: var(--color-dark-blue);
 }
 .customers-list__icon {
-    fill: #8E8F99;
+    fill: currentColor;
 }
 .footer-social__list {
     gap: 16px;
+}
+.footer-social__list-item .team-list__icon-wrapper:hover,
+.footer-social__list-item .team-list__icon-wrapper:focus
+{
+    background-color: #31d0aa;
 }
