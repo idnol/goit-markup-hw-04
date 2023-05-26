@@ -128,6 +128,10 @@ img {
     background-color: #2e2f42;
     padding: 100px 0;
 }
+.footer-container {
+    display: flex;
+    gap: 120px;
+}
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
@@ -135,6 +139,11 @@ img {
 .footer-info__text {
     max-width: 264px;
     color: var(--color-white);
+    letter-spacing: 0.02em;
+}
+.footer-social_title {
+    font-weight: 500;
+    margin-bottom: 16px;
 }
 .hero {
     background-color: #2e2f42;
@@ -320,12 +329,18 @@ img {
 .portfolio-list__title {
     margin-bottom: 8px;
 }
+.customers {
+    padding: 120px 0;
+}
+.customers-title {
+    margin-bottom: 72px;
+}
 .customers-list {
     display: flex;
     gap: 24px;
 }
 .customers-list__item-wrapper {
-    width: calc((100% - 120) / 6);
+    width: calc((100% - 120px) / 6);
 }
 .customers-list__item {
     width: 100%;
@@ -338,4 +353,7 @@ img {
 }
 .customers-list__icon {
     fill: #8E8F99;
+}
+.footer-social__list {
+    gap: 16px;
 }
