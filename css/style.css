@@ -320,3 +320,22 @@ img {
 .portfolio-list__title {
     margin-bottom: 8px;
 }
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-list__item-wrapper {
+    width: calc((100% - 120) / 6);
+}
+.customers-list__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    height: 88px;
+}
+.customers-list__icon {
+    fill: #8E8F99;
+}
